@@ -24,16 +24,36 @@ export default {
           foreground: "hsl(var(--secondary-foreground))",
         },
         blue: {
-          DEFAULT: colors.blue[600],
-          dark: colors.blue[700],
+          DEFAULT: colors.blue[500],
+          dark: colors.blue[600],
         },
         green: {
-          DEFAULT: colors.emerald[600],
-          dark: colors.emerald[700],
+          DEFAULT: colors.emerald[500],
+          dark: colors.emerald[600],
         },
         red: {
           DEFAULT: colors.red[600],
           dark: colors.red[700],
+        },
+        yellow: {
+          DEFAULT: colors.amber[600],
+          dark: colors.amber[700],
+        },
+        pink: {
+          DEFAULT: colors.rose[600],
+          dark: colors.rose[700],
+        },
+        indigo: {
+          DEFAULT: colors.indigo[600],
+          dark: colors.indigo[700],
+        },
+        sky: {
+          DEFAULT: colors.sky[600],
+          dark: colors.sky[700],
+        },
+        orange: {
+          DEFAULT: colors.orange[600],
+          dark: colors.orange[700],
         },
       },
     },
