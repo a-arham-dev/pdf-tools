@@ -3,6 +3,7 @@
 use App\Http\Controllers\DownloadFileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MergePdfController;
+use App\Http\Controllers\PdfToJpgController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SplitPdfController;
 use Illuminate\Support\Facades\Route;
@@ -14,7 +15,8 @@ Route::get('/merge-pdf', [MergePdfController::class, 'index'])->name('merge_pdf'
 Route::post('/merge-pdf', [MergePdfController::class, 'store'])->name('merge_pdf.store');
 Route::get('/split-pdf', [SplitPdfController::class, 'index'])->name('split_pdf');
 Route::post('/split-pdf', [SplitPdfController::class, 'store'])->name('split_pdf.store');
-Route::get('/pdf_to_jpg', fn() => 'page of pdf_to_jpg')->name('pdf_to_jpg');
+Route::get('/pdf-to-jpg', [PdfToJpgController::class, 'index'])->name('pdf_to_jpg');
+Route::post('/pdf-to-jpg', [PdfToJpgController::class, 'store'])->name('pdf_to_jpg.store');
 Route::get('/jpg_to_pdf', fn() => 'page of jpg_to_pdf')->name('jpg_to_pdf');
 Route::get('/rotate_pdf', fn() => 'page of rotate_pdf')->name('rotate_pdf');
 Route::get('/compress_pdf', fn() => 'page of compress_pdf')->name('compress_pdf');
